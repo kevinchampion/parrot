@@ -2,4 +2,6 @@
 // Sprites
 // --------------------------------------------------
 
-
+$sprite-spacing: 20px;
+@import "sprite/*.png";
+@include all-sprite-sprites;

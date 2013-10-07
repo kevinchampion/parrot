@@ -87,6 +87,10 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 * **_grid.scss** - This contains the *Grid* settings for your site, along with the *Media Queries* for the site. The *Grid* included with the theme by default is the Susy grid framework. You should use this file to layout the sites grid structure as well as block placement. It is recommended to keep the style and placement of block elements separated, allowing quick placement of blocks, and then style is based on the type of block is in the appropriate SASS file.
 * **_scaffolding.scss** - This contains the basic *Body* styles that the theme uses. This file is getting the styles from the *Variables* file, and does not really need editing.
 
+## Image sprites
+
+* Compass contains built-in support for generating both image sprites and the css for each individual image contained in the sprite. Parrot includes a default sprite configuration. By placing images in a directory inside the "img" directory named "sprite", all .png images will be combined into an image sprite when compass compiles. In addition, css will be generated with unique classes for each individual image contained in the sprite. Probably the simplest way to use these classes is to include them in your selector for the element that needs the background image using @extend. For instance, if you have an image named icon-arrow-left.png, compass will create a class named .sprite-icon-arrow-left. Inside your selector, you can then add @extend .sprite-icon-arrow-left. There's more you can do to [customize the sprites](http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1).
+
 ## Please Note
 
 This project is a Sandbox on Drupal.org as well, and will eventually become a Full Project, this github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests. If you want to submit issues, please do so in the Sandbox.

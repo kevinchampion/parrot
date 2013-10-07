@@ -10,6 +10,7 @@
 
 // Core variables and mixins
 @import "base/variables"; // Modify this for custom colors, font-sizes, etc
+@import "components/sprites";
 @import "base/mixins";
 
 // CSS Reset
@@ -27,7 +28,6 @@
 
 // Components: common
 @import "components/media";
-@import "components/sprites";
 
 // Components: Buttons & Alerts
 @import "components/buttons";
