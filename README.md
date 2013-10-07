@@ -89,7 +89,7 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 
 ## Image sprites
 
-Compass contains built-in support for generating both image sprites and the css for each individual image contained in the sprite. Parrot includes a default sprite configuration. By placing images in a directory inside the "img" directory named "sprite", all .png images will be combined into an image sprite when compass compiles. In addition, css will be generated with unique classes for each individual image contained in the sprite.
+Compass contains built-in support for generating both image sprites and the css for each individual image contained in the sprite. Parrot includes a default sprite configuration. By placing images in a directory inside the `/img` directory, `/img/sprite`, all .png images will be combined into an image sprite when compass compiles. In addition, css will be generated with unique classes for each individual image contained in the sprite.
 
 Probably the simplest way to use these classes is to include them in your selector for the element that needs the background image using `@extend`. For instance, if you have an image named `icon-arrow-left.png`, compass will create a class named `.sprite-icon-arrow-left`. Inside your selector, you can then add `@extend .sprite-icon-arrow-left`. There's more you can do to [customize the sprites](http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1).
 
