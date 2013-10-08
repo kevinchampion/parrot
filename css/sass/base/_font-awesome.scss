@@ -2815,3 +2815,1980 @@
   }
 }
 
+@mixin icon-lightbulb {
+  &:before {
+    content: "\f0eb";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0eb;');
+  }
+}
+
+@mixin icon-exchange {
+  &:before {
+    content: "\f0ec";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ec;');
+  }
+}
+
+@mixin icon-cloud-download {
+  &:before {
+    content: "\f0ed";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ed;');
+  }
+}
+
+@mixin icon-cloud-upload {
+  &:before {
+    content: "\f0ee";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ee;');
+  }
+}
+
+@mixin icon-user-md {
+  &:before {
+    content: "\f0f0";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f0;');
+  }
+}
+
+@mixin icon-stethoscope {
+  &:before {
+    content: "\f0f1";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f1;');
+  }
+}
+
+@mixin icon-suitcase {
+  &:before {
+    content: "\f0f2";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f2;');
+  }
+}
+
+@mixin icon-bell-alt {
+  &:before {
+    content: "\f0f3";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f3;');
+  }
+}
+
+@mixin icon-coffee {
+  &:before {
+    content: "\f0f4";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f4;');
+  }
+}
+
+@mixin icon-food {
+  &:before {
+    content: "\f0f5";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f5;');
+  }
+}
+
+@mixin icon-file-text-alt {
+  &:before {
+    content: "\f0f6";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f6;');
+  }
+}
+
+@mixin icon-building {
+  &:before {
+    content: "\f0f7";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f7;');
+  }
+}
+
+@mixin icon-hospital {
+  &:before {
+    content: "\f0f8";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f8;');
+  }
+}
+
+@mixin icon-ambulance {
+  &:before {
+    content: "\f0f9";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0f9;');
+  }
+}
+
+@mixin icon-medkit {
+  &:before {
+    content: "\f0fa";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0fa;');
+  }
+}
+
+@mixin icon-fighter-jet {
+  &:before {
+    content: "\f0fb";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0fb;');
+  }
+}
+
+@mixin icon-beer {
+  &:before {
+    content: "\f0fc";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0fc;');
+  }
+}
+
+@mixin icon-h-sign {
+  &:before {
+    content: "\f0fd";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0fd;');
+  }
+}
+
+@mixin icon-plus-sign-alt {
+  &:before {
+    content: "\f0fe";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0fe;');
+  }
+}
+
+@mixin icon-double-angle-left {
+  &:before {
+    content: "\f100";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf100;');
+  }
+}
+
+@mixin icon-double-angle-right {
+  &:before {
+    content: "\f101";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf101;');
+  }
+}
+
+@mixin icon-double-angle-up {
+  &:before {
+    content: "\f102";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf102;');
+  }
+}
+
+@mixin icon-double-angle-down {
+  &:before {
+    content: "\f103";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf103;');
+  }
+}
+
+@mixin icon-angle-left {
+  &:before {
+    content: "\f104";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf104;');
+  }
+}
+
+@mixin icon-angle-right {
+  &:before {
+    content: "\f105";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf105;');
+  }
+}
+
+@mixin icon-angle-up {
+  &:before {
+    content: "\f106";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf106;');
+  }
+}
+
+@mixin icon-angle-down {
+  &:before {
+    content: "\f107";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf107;');
+  }
+}
+
+@mixin icon-desktop {
+  &:before {
+    content: "\f108";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf108;');
+  }
+}
+
+@mixin icon-laptop {
+  &:before {
+    content: "\f109";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf109;');
+  }
+}
+
+@mixin icon-tablet {
+  &:before {
+    content: "\f10a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf10a;');
+  }
+}
+
+@mixin icon-mobile-phone {
+  &:before {
+    content: "\f10b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf10b;');
+  }
+}
+
+@mixin icon-circle-blank {
+  &:before {
+    content: "\f10c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf10c;');
+  }
+}
+
+@mixin icon-quote-left {
+  &:before {
+    content: "\f10d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf10d;');
+  }
+}
+
+@mixin icon-quote-right {
+  &:before {
+    content: "\f10e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf10e;');
+  }
+}
+
+@mixin icon-spinner {
+  &:before {
+    content: "\f110";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf110;');
+  }
+}
+
+@mixin icon-circle {
+  &:before {
+    content: "\f111";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf111;');
+  }
+}
+
+@mixin icon-reply {
+  &:before {
+    content: "\f112";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf112;');
+  }
+}
+
+@mixin icon-github-alt {
+  &:before {
+    content: "\f113";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf113;');
+  }
+}
+
+@mixin icon-folder-close-alt {
+  &:before {
+    content: "\f114";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf114;');
+  }
+}
+
+@mixin icon-folder-open-alt {
+  &:before {
+    content: "\f115";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf115;');
+  }
+}
+
+@mixin icon-expand-alt {
+  &:before {
+    content: "\f116";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf116;');
+  }
+}
+
+@mixin icon-collapse-alt {
+  &:before {
+    content: "\f117";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf117;');
+  }
+}
+
+@mixin icon-smile {
+  &:before {
+    content: "\f118";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf118;');
+  }
+}
+
+@mixin icon-frown {
+  &:before {
+    content: "\f119";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf119;');
+  }
+}
+
+@mixin icon-meh {
+  &:before {
+    content: "\f11a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf11a;');
+  }
+}
+
+@mixin icon-gamepad {
+  &:before {
+    content: "\f11b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf11b;');
+  }
+}
+
+@mixin icon-keyboard {
+  &:before {
+    content: "\f11c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf11c;');
+  }
+}
+
+@mixin icon-flag-alt {
+  &:before {
+    content: "\f11d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf11d;');
+  }
+}
+
+@mixin icon-flag-checkered {
+  &:before {
+    content: "\f11e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf11e;');
+  }
+}
+
+@mixin icon-terminal {
+  &:before {
+    content: "\f120";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf120;');
+  }
+}
+
+@mixin icon-code {
+  &:before {
+    content: "\f121";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf121;');
+  }
+}
+
+@mixin icon-reply-all {
+  &:before {
+    content: "\f122";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf122;');
+  }
+}
+
+@mixin icon-mail-reply-all {
+  &:before {
+    content: "\f122";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf122;');
+  }
+}
+
+@mixin icon-star-half-empty {
+  &:before {
+    content: "\f123";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf123;');
+  }
+}
+
+@mixin icon-location-arrow {
+  &:before {
+    content: "\f124";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf124;');
+  }
+}
+
+@mixin icon-crop {
+  &:before {
+    content: "\f125";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf125;');
+  }
+}
+
+@mixin icon-code-fork {
+  &:before {
+    content: "\f126";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf126;');
+  }
+}
+
+@mixin icon-unlink {
+  &:before {
+    content: "\f127";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf127;');
+  }
+}
+
+@mixin icon-question {
+  &:before {
+    content: "\f128";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf128;');
+  }
+}
+
+@mixin icon-info {
+  &:before {
+    content: "\f129";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf129;');
+  }
+}
+
+@mixin icon-exclamation {
+  &:before {
+    content: "\f12a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf12a;');
+  }
+}
+
+@mixin icon-superscript {
+  &:before {
+    content: "\f12b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf12b;');
+  }
+}
+
+@mixin icon-subscript {
+  &:before {
+    content: "\f12c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf12c;');
+  }
+}
+
+@mixin icon-eraser {
+  &:before {
+    content: "\f12d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf12d;');
+  }
+}
+
+@mixin icon-puzzle-piece {
+  &:before {
+    content: "\f12e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf12e;');
+  }
+}
+
+@mixin icon-microphone {
+  &:before {
+    content: "\f130";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf130;');
+  }
+}
+
+@mixin icon-microphone-off {
+  &:before {
+    content: "\f131";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf131;');
+  }
+}
+
+@mixin icon-shield {
+  &:before {
+    content: "\f132";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf132;');
+  }
+}
+
+@mixin icon-calendar-empty {
+  &:before {
+    content: "\f133";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf133;');
+  }
+}
+
+@mixin icon-fire-extinguisher {
+  &:before {
+    content: "\f134";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf134;');
+  }
+}
+
+@mixin icon-rocket {
+  &:before {
+    content: "\f135";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf135;');
+  }
+}
+
+@mixin icon-maxcdn {
+  &:before {
+    content: "\f136";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf136;');
+  }
+}
+
+@mixin icon-chevron-sign-left {
+  &:before {
+    content: "\f137";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf137;');
+  }
+}
+
+@mixin icon-chevron-sign-right {
+  &:before {
+    content: "\f138";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf138;');
+  }
+}
+
+@mixin icon-chevron-sign-up {
+  &:before {
+    content: "\f139";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf139;');
+  }
+}
+
+@mixin icon-chevron-sign-down {
+  &:before {
+    content: "\f13a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf13a;');
+  }
+}
+
+@mixin icon-html5 {
+  &:before {
+    content: "\f13b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf13b;');
+  }
+}
+
+@mixin icon-css3 {
+  &:before {
+    content: "\f13c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf13c;');
+  }
+}
+
+@mixin icon-anchor {
+  &:before {
+    content: "\f13d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf13d;');
+  }
+}
+
+@mixin icon-unlock-alt {
+  &:before {
+    content: "\f13e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf13e;');
+  }
+}
+
+@mixin icon-bullseye {
+  &:before {
+    content: "\f140";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf140;');
+  }
+}
+
+@mixin icon-ellipsis-horizontal {
+  &:before {
+    content: "\f141";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf141;');
+  }
+}
+
+@mixin icon-ellipsis-vertical {
+  &:before {
+    content: "\f142";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf142;');
+  }
+}
+
+@mixin icon-rss-sign {
+  &:before {
+    content: "\f143";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf143;');
+  }
+}
+
+@mixin icon-play-sign {
+  &:before {
+    content: "\f144";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf144;');
+  }
+}
+
+@mixin icon-ticket {
+  &:before {
+    content: "\f145";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf145;');
+  }
+}
+
+@mixin icon-minus-sign-alt {
+  &:before {
+    content: "\f146";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf146;');
+  }
+}
+
+@mixin icon-check-minus {
+  &:before {
+    content: "\f147";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf147;');
+  }
+}
+
+@mixin icon-level-up {
+  &:before {
+    content: "\f148";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf148;');
+  }
+}
+
+@mixin icon-level-down {
+  &:before {
+    content: "\f149";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf149;');
+  }
+}
+
+@mixin icon-check-sign {
+  &:before {
+    content: "\f14a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf14a;');
+  }
+}
+
+@mixin icon-edit-sign {
+  &:before {
+    content: "\f14b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf14b;');
+  }
+}
+
+@mixin icon-external-link-sign {
+  &:before {
+    content: "\f14c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf14c;');
+  }
+}
+
+@mixin icon-share-sign {
+  &:before {
+    content: "\f14d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf14d;');
+  }
+}
+
+@mixin icon-compass {
+  &:before {
+    content: "\f14e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf14e;');
+  }
+}
+
+@mixin icon-collapse {
+  &:before {
+    content: "\f150";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf150;');
+  }
+}
+
+@mixin icon-collapse-top {
+  &:before {
+    content: "\f151";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf151;');
+  }
+}
+
+@mixin icon-expand {
+  &:before {
+    content: "\f152";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf152;');
+  }
+}
+
+@mixin icon-eur {
+  &:before {
+    content: "\f153";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf153;');
+  }
+}
+
+@mixin icon-gbp {
+  &:before {
+    content: "\f154";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf154;');
+  }
+}
+
+@mixin icon-usd {
+  &:before {
+    content: "\f155";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf155;');
+  }
+}
+
+@mixin icon-inr {
+  &:before {
+    content: "\f156";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf156;');
+  }
+}
+
+@mixin icon-jpy {
+  &:before {
+    content: "\f157";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf157;');
+  }
+}
+
+@mixin icon-cny {
+  &:before {
+    content: "\f158";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf158;');
+  }
+}
+
+@mixin icon-krw {
+  &:before {
+    content: "\f159";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf159;');
+  }
+}
+
+@mixin icon-btc {
+  &:before {
+    content: "\f15a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf15a;');
+  }
+}
+
+@mixin icon-file {
+  &:before {
+    content: "\f15b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf15b;');
+  }
+}
+
+@mixin icon-file-text {
+  &:before {
+    content: "\f15c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf15c;');
+  }
+}
+
+@mixin icon-sort-by-alphabet {
+  &:before {
+    content: "\f15d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf15d;');
+  }
+}
+
+@mixin icon-sort-by-alphabet-alt {
+  &:before {
+    content: "\f15e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf15e;');
+  }
+}
+
+@mixin icon-sort-by-attributes {
+  &:before {
+    content: "\f160";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf160;');
+  }
+}
+
+@mixin icon-sort-by-attributes-alt {
+  &:before {
+    content: "\f161";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf161;');
+  }
+}
+
+@mixin icon-sort-by-order {
+  &:before {
+    content: "\f162";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf162;');
+  }
+}
+
+@mixin icon-sort-by-order-alt {
+  &:before {
+    content: "\f163";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf163;');
+  }
+}
+
+@mixin icon-thumbs-up {
+  &:before {
+    content: "\f164";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf164;');
+  }
+}
+
+@mixin icon-thumbs-down {
+  &:before {
+    content: "\f165";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf165;');
+  }
+}
+
+@mixin icon-youtube-sign {
+  &:before {
+    content: "\f166";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf166;');
+  }
+}
+
+@mixin icon-youtube {
+  &:before {
+    content: "\f167";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf167;');
+  }
+}
+
+@mixin icon-xing {
+  &:before {
+    content: "\f168";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf168;');
+  }
+}
+
+@mixin icon-xing-sign {
+  &:before {
+    content: "\f169";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf169;');
+  }
+}
+
+@mixin icon-youtube-play {
+  &:before {
+    content: "\f16a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf16a;');
+  }
+}
+
+@mixin icon-dropbox {
+  &:before {
+    content: "\f16b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf16b;');
+  }
+}
+
+@mixin icon-stackexchange {
+  &:before {
+    content: "\f16c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf16c;');
+  }
+}
+
+@mixin icon-instagram {
+  &:before {
+    content: "\f16d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf16d;');
+  }
+}
+
+@mixin icon-flickr {
+  &:before {
+    content: "\f16e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf16e;');
+  }
+}
+
+@mixin icon-adn {
+  &:before {
+    content: "\f170";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf170;');
+  }
+}
+
+@mixin icon-bitbucket {
+  &:before {
+    content: "\f171";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf171;');
+  }
+}
+
+@mixin icon-bitbucket-sign {
+  &:before {
+    content: "\f172";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf172;');
+  }
+}
+
+@mixin icon-tumblr {
+  &:before {
+    content: "\f173";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf173;');
+  }
+}
+
+@mixin icon-tumblr-sign {
+  &:before {
+    content: "\f174";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf174;');
+  }
+}
+
+@mixin icon-long-arrow-down {
+  &:before {
+    content: "\f175";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf175;');
+  }
+}
+
+@mixin icon-long-arrow-up {
+  &:before {
+    content: "\f176";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf176;');
+  }
+}
+
+@mixin icon-long-arrow-left {
+  &:before {
+    content: "\f177";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf177;');
+  }
+}
+
+@mixin icon-long-arrow-right {
+  &:before {
+    content: "\f178";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf178;');
+  }
+}
+
+@mixin icon-apple {
+  &:before {
+    content: "\f179";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf179;');
+  }
+}
+
+@mixin icon-windows {
+  &:before {
+    content: "\f17a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf17a;');
+  }
+}
+
+@mixin icon-android {
+  &:before {
+    content: "\f17b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf17b;');
+  }
+}
+
+@mixin icon-linux {
+  &:before {
+    content: "\f17c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf17c;');
+  }
+}
+
+@mixin icon-dribbble {
+  &:before {
+    content: "\f17d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf17d;');
+  }
+}
+
+@mixin icon-skype {
+  &:before {
+    content: "\f17e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf17e;');
+  }
+}
+
+@mixin icon-foursquare {
+  &:before {
+    content: "\f180";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf180;');
+  }
+}
+
+@mixin icon-trello {
+  &:before {
+    content: "\f181";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf181;');
+  }
+}
+
+@mixin icon-female {
+  &:before {
+    content: "\f182";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf182;');
+  }
+}
+
+@mixin icon-male {
+  &:before {
+    content: "\f183";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf183;');
+  }
+}
+
+@mixin icon-gittip {
+  &:before {
+    content: "\f184";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf184;');
+  }
+}
+
+@mixin icon-sun {
+  &:before {
+    content: "\f185";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf185;');
+  }
+}
+
+@mixin icon-moon {
+  &:before {
+    content: "\f186";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf186;');
+  }
+}
+
+@mixin icon-archive {
+  &:before {
+    content: "\f187";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf187;');
+  }
+}
+
+@mixin icon-bug {
+  &:before {
+    content: "\f188";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf188;');
+  }
+}
+
+@mixin icon-vk {
+  &:before {
+    content: "\f189";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf189;');
+  }
+}
+
+@mixin icon-weibo {
+  &:before {
+    content: "\f18a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf18a;');
+  }
+}
+
+@mixin icon-renren {
+  &:before {
+    content: "\f18b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf18b;');
+  }
+}
+
+
