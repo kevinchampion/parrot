@@ -52,6 +52,21 @@
 }
 
 
+/*  IE7 Support
+
+    Care must be taken with IE7 support since it uses the element itself rather
+    than a :before pseudo-element. Not only that, but it also injects the
+    content into the element, meaning that if your element is not empty, its
+    content will be overridden in IE7. As a result, it's best to only use
+    FontAwesome icons in IE7 on empty elements. If your element is not empty,
+    you'll need to reset the IE7 icon inclusion by adding .ie7 & { zoom:1; } to
+    the selector after the icon inclusion so that the icon is not injected.
+    ------------------------------------------------------- */
+@mixin ie7icon($inner) {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$inner}');
+}
+
+
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
 @mixin icon-glass{
@@ -60,6 +75,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf000;');
   }
 }
 
@@ -70,6 +89,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf001;');
+  }
 }
 
 @mixin icon-search{
@@ -78,6 +101,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf002;');
   }
 }
 
@@ -88,6 +115,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf003;');
+  }
 }
 
 @mixin icon-heart{
@@ -96,6 +127,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf004;');
   }
 }
 
@@ -106,6 +141,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf005;');
+  }
 }
 
 @mixin icon-star-empty{
@@ -114,6 +153,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf006;');
   }
 }
 
@@ -124,6 +167,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf007;');
+  }
 }
 
 @mixin icon-film{
@@ -132,6 +179,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf008;');
   }
 }
 
@@ -142,6 +193,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf009;');
+  }
 }
 
 @mixin icon-th{
@@ -150,6 +205,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf00a;');
   }
 }
 
@@ -160,6 +219,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf00b;');
+  }
 }
 
 @mixin icon-ok{
@@ -168,6 +231,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf00c;');
   }
 }
 
@@ -178,6 +245,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf00d;');
+  }
 }
 
 @mixin icon-zoom-in{
@@ -186,6 +257,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf00e;');
   }
 }
 
@@ -197,6 +272,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf010;');
+  }
 }
 
 @mixin icon-off{
@@ -205,6 +284,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf011;');
   }
 }
 
@@ -215,6 +298,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf012;');
+  }
 }
 
 @mixin icon-cog{
@@ -223,6 +310,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf013;');
   }
 }
 
@@ -233,6 +324,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf014;');
+  }
 }
 
 @mixin icon-home{
@@ -241,6 +336,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf015;');
   }
 }
 
@@ -251,6 +350,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf016;');
+  }
 }
 
 @mixin icon-time{
@@ -259,6 +362,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf017;');
   }
 }
 
@@ -269,6 +376,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf018;');
+  }
 }
 
 @mixin icon-download-alt{
@@ -277,6 +388,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf019;');
   }
 }
 
@@ -287,6 +402,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf01a;');
+  }
 }
 
 @mixin icon-upload{
@@ -295,6 +414,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf01b;');
   }
 }
 
@@ -305,6 +428,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf01c;');
+  }
 }
 
 @mixin icon-play-circle{
@@ -314,6 +441,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf01d;');
+  }
 }
 
 @mixin icon-repeat{
@@ -322,6 +453,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf01e;');
   }
 }
 
@@ -334,6 +469,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf021;');
+  }
 }
 
 @mixin icon-list-alt{
@@ -342,6 +481,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf022;');
   }
 }
 
@@ -352,6 +495,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf023;');
+  }
 }
 
 @mixin icon-flag{
@@ -360,6 +507,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf024;');
   }
 }
 
@@ -370,6 +521,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf025;');
+  }
 }
 
 @mixin icon-volume-off{
@@ -378,6 +533,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf026;');
   }
 }
 
@@ -388,6 +547,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf027;');
+  }
 }
 
 @mixin icon-volume-up{
@@ -396,6 +559,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf028;');
   }
 }
 
@@ -406,6 +573,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf029;');
+  }
 }
 
 @mixin icon-barcode{
@@ -414,6 +585,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf02a;');
   }
 }
 
@@ -424,6 +599,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf02b;');
+  }
 }
 
 @mixin icon-tags{
@@ -432,6 +611,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf02c;');
   }
 }
 
@@ -442,6 +625,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf02d;');
+  }
 }
 
 @mixin icon-bookmark{
@@ -451,6 +638,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf02e;');
+  }
 }
 
 @mixin icon-print{
@@ -459,6 +650,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf02f;');
   }
 }
 
@@ -470,6 +665,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf030;');
+  }
 }
 
 @mixin icon-font{
@@ -478,6 +677,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf031;');
   }
 }
 
@@ -488,6 +691,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf032;');
+  }
 }
 
 @mixin icon-italic{
@@ -496,6 +703,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf033;');
   }
 }
 
@@ -506,6 +717,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf034;');
+  }
 }
 
 @mixin icon-text-width{
@@ -514,6 +729,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf035;');
   }
 }
 
@@ -524,6 +743,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf036;');
+  }
 }
 
 @mixin icon-align-center{
@@ -532,6 +755,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf037;');
   }
 }
 
@@ -542,6 +769,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf038;');
+  }
 }
 
 @mixin icon-align-justify{
@@ -550,6 +781,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf039;');
   }
 }
 
@@ -560,6 +795,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf03a;');
+  }
 }
 
 @mixin icon-indent-left{
@@ -568,6 +807,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf03b;');
   }
 }
 
@@ -578,6 +821,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf03c;');
+  }
 }
 
 @mixin icon-facetime-video{
@@ -587,6 +834,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf03d;');
+  }
 }
 
 @mixin icon-picture{
@@ -595,6 +846,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf03e;');
   }
 }
 
@@ -606,6 +861,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf040;');
+  }
 }
 
 @mixin icon-map-marker{
@@ -614,6 +873,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf041;');
   }
 }
 
@@ -624,6 +887,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf042;');
+  }
 }
 
 @mixin icon-tint{
@@ -632,6 +899,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf043;');
   }
 }
 
@@ -642,6 +913,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf044;');
+  }
 }
 
 @mixin icon-share{
@@ -650,6 +925,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf045;');
   }
 }
 
@@ -660,6 +939,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf046;');
+  }
 }
 
 @mixin icon-move{
@@ -668,6 +951,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf047;');
   }
 }
 
@@ -678,6 +965,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf048;');
+  }
 }
 
 @mixin icon-fast-backward{
@@ -686,6 +977,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf049;');
   }
 }
 
@@ -696,6 +991,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf04a;');
+  }
 }
 
 @mixin icon-play{
@@ -704,6 +1003,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf04b;');
   }
 }
 
@@ -714,6 +1017,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf04c;');
+  }
 }
 
 @mixin icon-stop{
@@ -723,6 +1030,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf04d;');
+  }
 }
 
 @mixin icon-forward{
@@ -731,6 +1042,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf04e;');
   }
 }
 
@@ -742,6 +1057,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf050;');
+  }
 }
 
 @mixin icon-step-forward{
@@ -750,6 +1069,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf051;');
   }
 }
 
@@ -760,6 +1083,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf052;');
+  }
 }
 
 @mixin icon-chevron-left{
@@ -768,6 +1095,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf053;');
   }
 }
 
@@ -778,6 +1109,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf054;');
+  }
 }
 
 @mixin icon-plus-sign{
@@ -786,6 +1121,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf055;');
   }
 }
 
@@ -796,6 +1135,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf056;');
+  }
 }
 
 @mixin icon-remove-sign{
@@ -804,6 +1147,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf057;');
   }
 }
 
@@ -814,6 +1161,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf058;');
+  }
 }
 
 @mixin icon-question-sign{
@@ -822,6 +1173,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf059;');
   }
 }
 
@@ -832,6 +1187,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf05a;');
+  }
 }
 
 @mixin icon-screenshot{
@@ -840,6 +1199,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf05b;');
   }
 }
 
@@ -850,6 +1213,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf05c;');
+  }
 }
 
 @mixin icon-ok-circle{
@@ -859,6 +1226,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf05d;');
+  }
 }
 
 @mixin icon-ban-circle{
@@ -867,6 +1238,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf05e;');
   }
 }
 
@@ -878,6 +1253,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf060;');
+  }
 }
 
 @mixin icon-arrow-right{
@@ -886,6 +1265,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf061;');
   }
 }
 
@@ -896,6 +1279,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf062;');
+  }
 }
 
 @mixin icon-arrow-down{
@@ -904,6 +1291,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf063;');
   }
 }
 
@@ -914,6 +1305,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf064;');
+  }
 }
 
 @mixin icon-resize-full{
@@ -922,6 +1317,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf065;');
   }
 }
 
@@ -932,6 +1331,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf066;');
+  }
 }
 
 @mixin icon-plus{
@@ -940,6 +1343,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf067;');
   }
 }
 
@@ -950,6 +1357,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf068;');
+  }
 }
 
 @mixin icon-asterisk{
@@ -958,6 +1369,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf069;');
   }
 }
 
@@ -968,6 +1383,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf06a;');
+  }
 }
 
 @mixin icon-gift{
@@ -976,6 +1395,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf06b;');
   }
 }
 
@@ -986,6 +1409,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf06c;');
+  }
 }
 
 @mixin icon-fire{
@@ -995,6 +1422,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf06d;');
+  }
 }
 
 @mixin icon-eye-open{
@@ -1003,6 +1434,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf06e;');
   }
 }
 
@@ -1014,6 +1449,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf070;');
+  }
 }
 
 @mixin icon-warning-sign{
@@ -1022,6 +1461,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf071;');
   }
 }
 
@@ -1032,6 +1475,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf072;');
+  }
 }
 
 @mixin icon-calendar{
@@ -1040,6 +1487,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf073;');
   }
 }
 
@@ -1050,6 +1501,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf074;');
+  }
 }
 
 @mixin icon-comment{
@@ -1058,6 +1513,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf075;');
   }
 }
 
@@ -1068,6 +1527,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf076;');
+  }
 }
 
 @mixin icon-chevron-up{
@@ -1076,6 +1539,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf077;');
   }
 }
 
@@ -1086,6 +1553,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf078;');
+  }
 }
 
 @mixin icon-retweet{
@@ -1094,6 +1565,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf079;');
   }
 }
 
@@ -1104,6 +1579,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf07a;');
+  }
 }
 
 @mixin icon-folder-close{
@@ -1112,6 +1591,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf07b;');
   }
 }
 
@@ -1122,6 +1605,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf07c;');
+  }
 }
 
 @mixin icon-resize-vertical{
@@ -1131,6 +1618,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf07d;');
+  }
 }
 
 @mixin icon-resize-horizontal{
@@ -1139,6 +1630,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf07e;');
   }
 }
 
@@ -1150,6 +1645,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf080;');
+  }
 }
 
 @mixin icon-twitter-sign{
@@ -1158,6 +1657,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf081;');
   }
 }
 
@@ -1168,6 +1671,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf082;');
+  }
 }
 
 @mixin icon-camera-retro{
@@ -1176,6 +1683,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf083;');
   }
 }
 
@@ -1186,6 +1697,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf084;');
+  }
 }
 
 @mixin icon-cogs{
@@ -1194,6 +1709,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf085;');
   }
 }
 
@@ -1204,6 +1723,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf086;');
+  }
 }
 
 @mixin icon-thumbs-up{
@@ -1212,6 +1735,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf087;');
   }
 }
 
@@ -1222,6 +1749,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf088;');
+  }
 }
 
 @mixin icon-star-half{
@@ -1230,6 +1761,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf089;');
   }
 }
 
@@ -1240,6 +1775,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf08a;');
+  }
 }
 
 @mixin icon-signout{
@@ -1248,6 +1787,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf08b;');
   }
 }
 
@@ -1258,6 +1801,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf08c;');
+  }
 }
 
 @mixin icon-pushpin{
@@ -1267,6 +1814,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf08d;');
+  }
 }
 
 @mixin icon-external-link{
@@ -1275,6 +1826,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf08e;');
   }
 }
 
@@ -1286,6 +1841,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf090;');
+  }
 }
 
 @mixin icon-trophy{
@@ -1294,6 +1853,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf091;');
   }
 }
 
@@ -1304,6 +1867,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf092;');
+  }
 }
 
 @mixin icon-upload-alt{
@@ -1312,6 +1879,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf093;');
   }
 }
 
@@ -1322,6 +1893,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf094;');
+  }
 }
 
 @mixin icon-phone{
@@ -1330,6 +1905,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf095;');
   }
 }
 
@@ -1340,6 +1919,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf096;');
+  }
 }
 
 @mixin icon-bookmark-empty{
@@ -1348,6 +1931,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf097;');
   }
 }
 
@@ -1358,6 +1945,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf098;');
+  }
 }
 
 @mixin icon-twitter{
@@ -1366,6 +1957,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf099;');
   }
 }
 
@@ -1376,6 +1971,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf09a;');
+  }
 }
 
 @mixin icon-github{
@@ -1384,6 +1983,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf09b;');
   }
 }
 
@@ -1394,6 +1997,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf09c;');
+  }
 }
 
 @mixin icon-credit-card{
@@ -1403,6 +2010,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf09d;');
+  }
 }
 
 @mixin icon-rss{
@@ -1411,6 +2022,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf09e;');
   }
 }
 
@@ -1422,6 +2037,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a0;');
+  }
 }
 
 @mixin icon-bullhorn{
@@ -1430,6 +2049,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a1;');
   }
 }
 
@@ -1440,6 +2063,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a2;');
+  }
 }
 
 @mixin icon-certificate{
@@ -1448,6 +2075,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a3;');
   }
 }
 
@@ -1458,6 +2089,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a4;');
+  }
 }
 
 @mixin icon-hand-left{
@@ -1466,6 +2101,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a5;');
   }
 }
 
@@ -1476,6 +2115,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a6;');
+  }
 }
 
 @mixin icon-hand-down{
@@ -1484,6 +2127,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a7;');
   }
 }
 
@@ -1494,6 +2141,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a8;');
+  }
 }
 
 @mixin icon-circle-arrow-right{
@@ -1502,6 +2153,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0a9;');
   }
 }
 
@@ -1512,6 +2167,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0aa;');
+  }
 }
 
 @mixin icon-circle-arrow-down{
@@ -1520,6 +2179,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ab;');
   }
 }
 
@@ -1530,6 +2193,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ac;');
+  }
 }
 
 @mixin icon-wrench{
@@ -1539,6 +2206,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ad;');
+  }
 }
 
 @mixin icon-tasks{
@@ -1547,6 +2218,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ae;');
   }
 }
 
@@ -1558,6 +2233,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0b0;');
+  }
 }
 
 @mixin icon-briefcase{
@@ -1567,6 +2246,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0b1;');
+  }
 }
 
 @mixin icon-fullscreen{
@@ -1575,6 +2258,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0b2;');
   }
 }
 
@@ -1586,6 +2273,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c0;');
+  }
 }
 
 @mixin icon-link{
@@ -1594,6 +2285,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c1;');
   }
 }
 
@@ -1604,6 +2299,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c2;');
+  }
 }
 
 @mixin icon-beaker{
@@ -1612,6 +2311,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c3;');
   }
 }
 
@@ -1622,6 +2325,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c4;');
+  }
 }
 
 @mixin icon-copy{
@@ -1630,6 +2337,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c5;');
   }
 }
 
@@ -1640,6 +2351,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c6;');
+  }
 }
 
 @mixin icon-save{
@@ -1648,6 +2363,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c7;');
   }
 }
 
@@ -1658,6 +2377,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c8;');
+  }
 }
 
 @mixin icon-reorder{
@@ -1666,6 +2389,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0c9;');
   }
 }
 
@@ -1676,6 +2403,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ca;');
+  }
 }
 
 @mixin icon-list-ol{
@@ -1684,6 +2415,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0cb;');
   }
 }
 
@@ -1694,6 +2429,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0cc;');
+  }
 }
 
 @mixin icon-underline{
@@ -1703,6 +2442,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0cd;');
+  }
 }
 
 @mixin icon-table{
@@ -1711,6 +2454,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ce;');
   }
 }
 
@@ -1722,6 +2469,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d0;');
+  }
 }
 
 @mixin icon-truck{
@@ -1730,6 +2481,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d1;');
   }
 }
 
@@ -1740,6 +2495,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d2;');
+  }
 }
 
 @mixin icon-pinterest-sign{
@@ -1748,6 +2507,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d3;');
   }
 }
 
@@ -1758,6 +2521,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d4;');
+  }
 }
 
 @mixin icon-google-plus{
@@ -1766,6 +2533,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d5;');
   }
 }
 
@@ -1776,6 +2547,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d6;');
+  }
 }
 
 @mixin icon-caret-down{
@@ -1784,6 +2559,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d7;');
   }
 }
 
@@ -1794,6 +2573,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d8;');
+  }
 }
 
 @mixin icon-caret-left{
@@ -1802,6 +2585,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0d9;');
   }
 }
 
@@ -1812,6 +2599,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0da;');
+  }
 }
 
 @mixin icon-columns{
@@ -1820,6 +2611,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0db;');
   }
 }
 
@@ -1830,6 +2625,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0dc;');
+  }
 }
 
 @mixin icon-sort-down{
@@ -1839,6 +2638,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0dd;');
+  }
 }
 
 @mixin icon-sort-up{
@@ -1847,6 +2650,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0de;');
   }
 }
 
@@ -1858,6 +2665,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e0;');
+  }
 }
 
 @mixin icon-linkedin{
@@ -1866,6 +2677,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e1;');
   }
 }
 
@@ -1876,6 +2691,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e2;');
+  }
 }
 
 @mixin icon-legal{
@@ -1884,6 +2703,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e3;');
   }
 }
 
@@ -1894,6 +2717,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e4;');
+  }
 }
 
 @mixin icon-comment-alt{
@@ -1902,6 +2729,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e5;');
   }
 }
 
@@ -1912,6 +2743,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e6;');
+  }
 }
 
 @mixin icon-bolt{
@@ -1920,6 +2755,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e7;');
   }
 }
 
@@ -1930,6 +2769,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e8;');
+  }
 }
 
 @mixin icon-umbrella{
@@ -1938,6 +2781,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0e9;');
   }
 }
 
@@ -1948,6 +2795,10 @@
     padding-right: 5px;
     text-decoration: none;
   }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf0ea;');
+  }
 }
 
 
@@ -1957,6 +2808,10 @@
     @include Awesome;
     padding-right: 5px;
     text-decoration: none;
+  }
+  .ie7 & {
+    @include Awesome;
+    @include ie7icon('&#xf200;');
   }
 }
 
